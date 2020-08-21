@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>
+            Lokesh Weds Nithya
+        </title>
+        <link rel="icon" type="image/png" href="images/logo.png" />
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        
+    </head>
+
+
+    <body>
+        
+        <div class="main">
+
+            <div>
+                <image src="images/logo.png" id="logoimg" >
+            </div>
+            <div>
+                <img src="images/cloud.png" id="clouds">
+                <img src="images/birds.png" id="birds">
+                <img src="images/name.png" id="name" style="opacity: 0;">
+                <img src="images/hidecloud1.png" id="hidecloud1" >
+                <img src="images/hidecloud2.png" id="hidecloud2" >
+                <img src="images/knot.png" id="knot">
+
+                
+                
+            </div>
+
+         
+        </div>
+        <iframe width=100% height=30% src="https://www.youtube.com/embed/uVxkuujvz9I? autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div style="z-index: 6;padding-top: 20%; align-content: center;justify-content: center;text-align: center;">
+            <a style="font-family: 'Aladin', cursive; font-size: 200px;color: #bc0450;">W</a><a style="font-family: 'Aladin', cursive; font-size: 50px;color: #000;">e cordially invite you to provide your honour Virtual Presence during our wedding ceremony</a>
+            <a href="invitation.html">
+            <br><br><button class="button">Open Invitation</button><br>
+                <div style="background-color: #bc0450;text-align: center;padding: 20px;margin-top: 30px;">
+                    <a style="font-family: 'Aladin', cursive; font-size: 200px;color: #fff;">W</a><a style="font-family: 'Aladin', cursive; font-size: 50px;color: #fff;">e are unable to reach you in person due to this pandemic. But we tried out best you invite you in a special way.</a>
+           
+                   <br><br><br> <a class="button2" style="text-align: center;" href="./ar.html">View Augmented Reality invite</a>
+                    </div>
+        
+        </div>
+
+
+
+        
+        <div class="live">
+
+            <div style="text-align: center;">
+                <image src="images/logo.png" id="logoimg" ><br><br>
+                <a style="font-family: 'Aladin', cursive; font-size: 200px;color: #bc0450;">T</a><a style="font-family: 'Aladin', cursive; font-size: 50px;color: #000;">hat beauty moment will start in...</a><br>
+                <p id="demo" style="font-family: 'Aladin', cursive; font-size: 100px;color: #fff;text-shadow:2px 2px #383838;"></p><br><br>
+                
+            </div>
+            <iframe width=100% height=30% src="https://www.youtube.com/embed/FAAM6O1GeR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            
+
+      
+                
+                
+                
+                
+            </div>
+            <div style="background-color: #bc0450; text-align: center;">
+                <a style="font-size: 10px;color: #fff;font-family: sans-serif;">with Love   </a>
+                <a style="font-family: 'Great Vibes', cursive;font-size: 50px;color: #fff">Lokesh & Nithya</a>
+            </div>
+        
+
+        <script type="text/javascript">
+         let name= document.getElementById("name");
+         let hidecloud1= document.getElementById("hidecloud1");
+         let hidecloud2= document.getElementById("hidecloud2");
+         let birds= document.getElementById("birds");
+
+         window.addEventListener('scroll', function(){
+             var value = window.scrollY;
+
+             name.style.opacity=value/100;
+             birds.style.left=value*10+'px';
+             hidecloud1.style.left=-value*5 +'px';
+             hidecloud2.style.left=value*5 +'px';
+             
+
+             
+
+         })
+        
+        
+        
+        </script>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Aug 28, 2020 06:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+       
+    </body>
+</html>
